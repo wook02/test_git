@@ -1,0 +1,18 @@
+choice = int(input("입력 진수 결정(16/10/8/2): "))
+value = input("값 입력: ")
+
+if choice == 16:
+    numb = int(value, 16)
+elif choice == 10:
+    numb = int(value, 10)
+elif choice == 8:
+    numb = int(value, 8)
+elif choice == 2:
+    numb = int(value, 2)
+else:
+    print("지원하지 않는 진수입니다.")
+
+print("16진수 ==> ", hex(numb))
+print("10진수 ==> ", numb)
+print("8진수 ==> ", oct(numb))
+print("2진수 ==> ", bin(numb))
